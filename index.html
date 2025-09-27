@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoVue - Crypto Tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <i class="fas fa-coins"></i>
+        <h1>CryptoVue</h1>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="active">Crypto Tracker</a>
+        <a href="forex-signals.html">Forex Signals</a>
+        <a href="forex-strategies.html">Forex Strategies</a>
+      </div>
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search...">
+      </div>
+    </nav>
+
+    <!-- Crypto Tracker Page -->
+    <div id="crypto" class="page-content active">
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-value" id="totalMarketCap">Loading...</div>
+          <div class="stat-label">Total Market Cap</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="totalVolume">Loading...</div>
+          <div class="stat-label">24h Volume</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="btcDominance">Loading...</div>
+          <div class="stat-label">BTC Dominance</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="marketSentiment">Loading...</div>
+          <div class="stat-label">Market Sentiment</div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="card">
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <h2 class="section-title"><i class="fas fa-chart-line"></i> Top Cryptocurrencies</h2>
+            <button class="refresh-btn" id="refreshData">
+              <i class="fas fa-sync-alt"></i> Refresh
+            </button>
+          </div>
+          
+          <div id="cryptoTable">
+            <div class="loading">
+              <i class="fas fa-spinner fa-spin"></i> Loading cryptocurrency data...
+            </div>
+          </div>
+          
+          <div class="api-status">
+            <i class="fas fa-circle online"></i>
+            <span>Live data from CoinGecko API</span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <div class="card">
+            <h2 class="section-title"><i class="fas fa-star"></i> Watchlist</h2>
+            <div id="watchlist">
+              <div class="loading">
+                <i class="fas fa-spinner fa-spin"></i> Loading watchlist...
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 class="section-title"><i class="fas fa-newspaper"></i> Crypto News</h2>
+            <div id="news">
+              <div class="news-item">
+                <div class="news-content">
+                  <h4>Bitcoin ETF Approval Expected Soon</h4>
+                  <p>Analysts predict SEC approval could happen within the next month...</p>
+                </div>
+              </div>
+              <div class="news-item">
+                <div class="news-content">
+                  <h4>Ethereum Upgrade Boosts Performance</h4>
+                  <p>The latest network upgrade reduces gas fees by 15% on average...</p>
+                </div>
+              </div>
+              <div class="news-item">
+                <div class="news-content">
+                  <h4>Solana Outage Raises Concerns</h4>
+                  <p>Network experienced a 4-hour downtime yesterday...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>CryptoVue &copy; 2023 - Cryptocurrency & Forex Trading Platform</p>
+      <p>Real-time data provided by CoinGecko API | Forex signals updated regularly</p>
+    </footer>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+</html>

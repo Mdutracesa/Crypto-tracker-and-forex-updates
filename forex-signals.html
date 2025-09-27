@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoVue - Forex Signals</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <i class="fas fa-coins"></i>
+        <h1>CryptoVue</h1>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Crypto Tracker</a>
+        <a href="forex-signals.html" class="active">Forex Signals</a>
+        <a href="forex-strategies.html">Forex Strategies</a>
+      </div>
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search...">
+      </div>
+    </nav>
+
+    <!-- Forex Signals Page -->
+    <div id="forex-signals" class="page-content active">
+      <div class="card">
+        <h2 class="section-title"><i class="fas fa-bullhorn"></i> Live Forex Signals</h2>
+        <p style="margin-bottom: 20px; color: var(--text-secondary);">Real-time trading signals for major currency pairs. Updated every 15 minutes.</p>
+        
+        <div id="signalsList">
+          <div class="signal-item">
+            <div class="signal-pair">EUR/USD</div>
+            <div class="signal-direction signal-buy">BUY</div>
+            <div class="signal-details">
+              <div class="signal-detail">
+                <div class="signal-value">1.0850</div>
+                <div class="signal-label">Entry</div>
+              </div>
+              <div class="signal-detail">
+                <div class="signal-value">1.0950</div>
+                <div class="signal-label">Target</div>
+              </div>
+              <div class="signal-detail">
+                <div class="signal-value">1.0800</div>
+                <div class="signal-label">Stop Loss</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="signal-item">
+            <div class="signal-pair">GBP/JPY</div>
+            <div class="signal-direction signal-sell">SELL</div>
+            <div class="signal-details">
+              <div class="signal-detail">
+                <div class="signal-value">183.50</div>
+                <div class="signal-label">Entry</div>
+              </div>
+              <div class="signal-detail">
+                <div class="signal-value">181.00</div>
+                <div class="signal-label">Target</div>
+              </div>
+              <div class="signal-detail">
+                <div class="signal-value">185.00</div>
+                <div class="signal-label">Stop Loss</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="signal-item">
+            <div class="signal-pair">USD/CAD</div>
+            <div class="signal-direction signal-buy">BUY</div>
+            <div class="signal-details">
+              <div class="signal-detail">
+                <div class="signal-value">1.3500</div>
+                <div class="signal-label">Entry</div>
+              </div>
+              <div class="signal-detail">
+                <div class="signal-value">1.3650</div>
+                <div class="signal-label">Target</div>
+              </div>
+              <div class="signal-detail">
+                <div class="signal-value">1.3450</div>
+                <div class="signal-label">Stop Loss</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="signal-item">
+            <div class="signal-pair">AUD/USD</div>
+            <div class="signal-direction signal-sell">SELL</div>
+            <div class="signal-details">
+              <div class="signal-detail">
+                <div class="signal-value">0.6550</div>
+                <div class="signal-label">Entry</div>
+              </div>
+              <div class="signal-detail">
+                <div class="signal-value">0.6450</div>
+                <div class="signal-label">Target</div>
+              </div>
+              <div class="signal-detail">
+                <div class="signal-value">0.6600</div>
+                <div class="signal-label">Stop Loss</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="api-status">
+          <i class="fas fa-circle online"></i>
+          <span>Signals updated: Just now</span>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h2 class="section-title"><i class="fas fa-chart-bar"></i> Signal Performance</h2>
+        <p style="margin-bottom: 20px; color: var(--text-secondary);">Track the performance of our forex signals over time.</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+          <div style="text-align: center; padding: 15px; background: rgba(45, 27, 105, 0.3); border-radius: 10px;">
+            <div style="font-size: 24px; font-weight: bold; color: var(--positive);">72%</div>
+            <div style="font-size: 14px; color: var(--text-secondary);">Success Rate</div>
+          </div>
+          <div style="text-align: center; padding: 15px; background: rgba(45, 27, 105, 0.3); border-radius: 10px;">
+            <div style="font-size: 24px; font-weight: bold; color: var(--accent-light);">154</div>
+            <div style="font-size: 14px; color: var(--text-secondary);">Signals This Month</div>
+          </div>
+          <div style="text-align: center; padding: 15px; background: rgba(45, 27, 105, 0.3); border-radius: 10px;">
+            <div style="font-size: 24px; font-weight: bold; color: var(--positive);">+3.2%</div>
+            <div style="font-size: 14px; color: var(--text-secondary);">Average Return</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>CryptoVue &copy; 2023 - Cryptocurrency & Forex Trading Platform</p>
+    </footer>
+  </div>
+</body>
+</html>
